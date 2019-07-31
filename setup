@@ -1,6 +1,6 @@
 # Some manual setup you still need to do
 # chsh -s `which zsh`
-# Install Snazzy
+# Install iTerm2 and Hyper Snazzy
 # Install DankMono font
 
 cd ~
@@ -49,11 +49,8 @@ cat ~/dotfiles/bin/dotfiles/zshell/secret >> ~/.zshrc
 # cat ~/dotfiles/bin/dotfiles/zshell/declares >> ~/.zshrc
 
 # Install ZSH syntax highlighting
-cd ~
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
-cd ~
-rm -rf zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting
+echo "source ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
 # switch to zshell
 source ~/.zshrc
