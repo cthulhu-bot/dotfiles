@@ -1,0 +1,202 @@
+typeset 0=-zsh
+typeset -A ASYNC_CALLBACKS=( prompt_pure prompt_pure_async_callback )
+typeset ASYNC_DEBUG=0
+typeset ASYNC_INIT_DONE=1
+typeset -A ASYNC_PROCESS_BUFFER=( prompt_pure '' )
+typeset -A ASYNC_PTYS=( 11 prompt_pure )
+typeset ASYNC_VERSION=1.7.1
+typeset ASYNC_ZPTY_RETURNS_FD=1
+export Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.FaWYigLzBM/Render
+typeset -A BG
+export BROWSERSTACK_KEY=9cefy6zLj1tNwGfwuuEV
+typeset CDPATH=''
+export COLORFGBG='15;0'
+export COLORTERM=truecolor
+typeset -i10 COLUMNS=125
+export COMP_WORDBREAKS=''
+typeset CPUTYPE=x86_64
+typeset -i10 EGID=20
+typeset -i10 EUID=501
+typeset -A FG
+typeset FIGNORE=''
+typeset FPATH=/Users/jstupplebeen/.oh-my-zsh/custom/plugins/oh-my-matrix:/Users/jstupplebeen/.oh-my-zsh/functions:/Users/jstupplebeen/.oh-my-zsh/completions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.3/functions
+typeset -A FX
+typeset -i10 GID=20
+typeset HISTCHARS='!^#'
+typeset HISTFILE=/Users/jstupplebeen/.zsh_history
+typeset -i10 HISTSIZE=50000
+export HOME=/Users/jstupplebeen
+typeset HOST=jstupplebeen-mbp-6b55b
+typeset IFS=$' \t\n\C-@'
+export ITERM_PROFILE=Default
+export ITERM_SESSION_ID=w0t0p0:1EC5CBF1-F742-4FDC-A7AB-1CB24ABB0985
+typeset KEYBOARD_HACK=''
+typeset -i KEYTIMEOUT=40
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+export LC_TERMINAL=iTerm2
+export LC_TERMINAL_VERSION=3.3.0beta16
+export LESS=-R
+typeset -i10 LINES=60
+typeset -i LISTMAX=100
+typeset -i LOGCHECK=60
+export LOGNAME=jstupplebeen
+export LSCOLORS=Gxfxcxdxbxegedabagacad
+typeset MACHTYPE=x86_64
+typeset -i MAILCHECK=60
+typeset MAILPATH=''
+typeset MANPATH=''
+typeset MENUSELECT=0
+typeset MODULE_PATH=/usr/lib/zsh/5.3
+typeset NULLCMD=cat
+export NVM_BIN=/Users/jstupplebeen/.nvm/versions/node/v11.6.0/bin
+export NVM_CD_FLAGS=-q
+export NVM_DIR=/Users/jstupplebeen/.nvm
+export OLDPWD=/Users/jstupplebeen/dotfiles/bin/dotfiles
+typeset OPTARG=''
+typeset -i10 OPTIND=1
+typeset OSTYPE=darwin18.0
+export PAGER=less
+export PATH=/Users/jstupplebeen/.nvm/versions/node/v11.6.0/bin:/Users/jstupplebeen/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin
+typeset POST_1_7_2_GIT=1
+typeset PROMPT=$'%F{blue}%~%f\n%{\C-M%}%(12V.%F{242}%12v%f .)%(?.%F{magenta}.%F{red})${prompt_pure_state[prompt]}%f '
+typeset PROMPT2='%_> '
+typeset PROMPT3='?# '
+typeset PROMPT4='%F{yellow}${(l:${(%)prompt_pure_debug_depth[1]}::+:)}%f ${${${${(%)prompt_pure_debug_depth[2]}:#${(%)prompt_pure_debug_depth[3]}}:+"%F{blue}${${(%)prompt_pure_debug_depth[3]}:t}%f%F{242}:%I%f %F{242}@%f%F{blue}%N%f%F{242}:%i%f"}:-"%F{blue}%N%f%F{242}:%i"}%F{242}>%f '
+export PROMPT_EOL_MARK=''
+typeset PS1=$'%F{blue}%~%f\n%{\C-M%}%(12V.%F{242}%12v%f .)%(?.%F{magenta}.%F{red})${prompt_pure_state[prompt]}%f '
+typeset PS2='%_> '
+typeset PS3='?# '
+typeset PS4='%F{yellow}${(l:${(%)prompt_pure_debug_depth[1]}::+:)}%f ${${${${(%)prompt_pure_debug_depth[2]}:#${(%)prompt_pure_debug_depth[3]}}:+"%F{blue}${${(%)prompt_pure_debug_depth[3]}:t}%f%F{242}:%I%f %F{242}@%f%F{blue}%N%f%F{242}:%i%f"}:-"%F{blue}%N%f%F{242}:%i"}%F{242}>%f '
+typeset PSVAR=:::::::::::
+export PWD=/Users/jstupplebeen
+typeset -i10 RANDOM=8838
+typeset READNULLCMD=more
+typeset -i10 SAVEHIST=10000
+typeset SCREEN_NO=''
+typeset -i10 SECONDS=97716
+export SHELL=/bin/zsh
+export -i10 SHLVL=1
+typeset SHORT_HOST=jstupplebeen-mbp-6b55b
+typeset SPROMPT='zsh: correct '\''%R'\'' to '\''%r'\'' [nyae]? '
+export SQLITE_EXEMPT_PATH_FROM_VNODE_GUARDS=/Users/jstupplebeen/Library/WebKit/Databases
+export SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.iHbXeo9Huf/Listeners
+export STAGE_LOGIN_PASSWORD=VO3dubz
+export TERM=xterm-256color
+export TERM_PROGRAM=iTerm.app
+export TERM_PROGRAM_VERSION=3.3.0beta16
+export TERM_SESSION_ID=w0t0p0:1EC5CBF1-F742-4FDC-A7AB-1CB24ABB0985
+typeset TIMEFMT='%J  %U user %S system %P cpu %*E total'
+export TMPDIR=/var/folders/1t/8880y4fn007b53ls_qrq7nx40000gn/T/
+typeset TMPPREFIX=/tmp/zsh
+typeset -i10 TRY_BLOCK_ERROR=-1
+typeset -i10 TRY_BLOCK_INTERRUPT=-1
+typeset TTY=/dev/ttys008
+typeset -i10 UID=501
+export USER=jstupplebeen
+typeset USERNAME=jstupplebeen
+typeset VENDOR=apple
+export VIRTUAL_ENV_DISABLE_PROMPT=12
+typeset WATCH=''
+typeset WATCHFMT='%n has %a %l from %m.'
+typeset WORDCHARS=''
+export XPC_FLAGS=0x0
+export XPC_SERVICE_NAME=0
+typeset -a X_ZSH_HIGHLIGHT_DIRS_BLACKLIST=(  )
+typeset ZLS_COLORS=''
+export ZSH=/Users/jstupplebeen/.oh-my-zsh
+typeset ZSH_ARGZERO=-zsh
+typeset ZSH_CACHE_DIR=/Users/jstupplebeen/.oh-my-zsh/cache
+typeset ZSH_COMPDUMP=/Users/jstupplebeen/.zcompdump-jstupplebeen-mbp-6b55b-5.3
+typeset ZSH_CUSTOM=/Users/jstupplebeen/.oh-my-zsh/custom
+typeset -a ZSH_HIGHLIGHT_HIGHLIGHTERS=( main )
+typeset -A ZSH_HIGHLIGHT_PATTERNS=( )
+typeset -A ZSH_HIGHLIGHT_REGEXP=( )
+typeset ZSH_HIGHLIGHT_REVISION=HEAD
+typeset -A ZSH_HIGHLIGHT_STYLES=( arg0 'fg=green' assign none back-dollar-quoted-argument 'fg=cyan' back-double-quoted-argument 'fg=cyan' back-quoted-argument none back-quoted-argument-delimiter 'fg=magenta' bracket-error 'fg=red,bold' bracket-level-1 'fg=blue,bold' bracket-level-2 'fg=green,bold' bracket-level-3 'fg=magenta,bold' bracket-level-4 'fg=yellow,bold' bracket-level-5 'fg=cyan,bold' command-substitution none command-substitution-delimiter 'fg=magenta' commandseparator none comment 'fg=black,bold' cursor standout cursor-matchingbracket standout default none dollar-double-quoted-argument 'fg=cyan' dollar-quoted-argument 'fg=yellow' double-hyphen-option none double-quoted-argument 'fg=yellow' globbing 'fg=blue' history-expansion 'fg=blue' line '' named-fd none path underline path_pathseparator '' path_prefix_pathseparator '' precommand 'fg=green,underline' process-substitution none process-substitution-delimiter 'fg=magenta' rc-quote 'fg=cyan' redirection none reserved-word 'fg=yellow' root standout single-hyphen-option none single-quoted-argument 'fg=yellow' suffix-alias 'fg=green,underline' unknown-token 'fg=red,bold' )
+typeset ZSH_HIGHLIGHT_VERSION=0.7.0-dev
+typeset ZSH_NAME=zsh
+typeset ZSH_PATCHLEVEL=zsh-5.3-0-g4cfdbdb
+typeset ZSH_SPECTRUM_TEXT='Arma virumque cano Troiae qui primus ab oris'
+typeset ZSH_THEME_GIT_PROMPT_CLEAN=''
+typeset ZSH_THEME_GIT_PROMPT_DIRTY='*'
+typeset ZSH_THEME_GIT_PROMPT_PREFIX='git:('
+typeset ZSH_THEME_GIT_PROMPT_SUFFIX=')'
+typeset ZSH_THEME_TERM_TAB_TITLE_IDLE='%15<..<%~%<<'
+typeset ZSH_THEME_TERM_TITLE_IDLE='%n@%m: %~'
+typeset ZSH_VERSION=5.3
+typeset _=-p
+typeset _ZSH_HIGHLIGHT_PRIOR_BUFFER=''
+typeset -i _ZSH_HIGHLIGHT_PRIOR_CURSOR=0
+export __CF_USER_TEXT_ENCODING=0x0:0:0
+typeset __savecursor=0
+typeset __searching=up-line-or-beginning-search
+typeset -a _comp_assocs=( '' )
+typeset _comp_dumpfile=/Users/jstupplebeen/.zcompdump-jstupplebeen-mbp-6b55b-5.3
+typeset -a _comp_options
+typeset _comp_setup
+typeset -A _compautos
+typeset -A _comps
+typeset -A _lastcomp
+typeset -A _patcomps
+typeset -A _postpatcomps
+typeset -A _services
+typeset -a _zsh_highlight__highlighter_main_cache=( '0 7 fg=yellow' '8 10 none' )
+typeset -A _zsh_highlight_main__command_type_cache=( de none dec none decl none decla none declar none declare reserved dirs builtin head command )
+typeset -A aliases
+typeset -a argv=(  )
+typeset -A bg
+typeset -A bg_bold
+typeset -A bg_no_bold
+typeset bold_color
+typeset -a cdpath=(  )
+typeset -A color=( 00 none 01 bold 02 faint 03 standout 04 underline 05 blink 07 reverse 08 conceal 22 normal 23 no-standout 24 no-underline 25 no-blink 27 no-reverse 28 no-conceal 30 black 31 red 32 green 33 yellow 34 blue 35 magenta 36 cyan 37 white 39 default 40 bg-black 41 bg-red 42 bg-green 43 bg-yellow 44 bg-blue 45 bg-magenta 46 bg-cyan 47 bg-white 49 bg-default bg-black 40 bg-blue 44 bg-cyan 46 bg-default 49 bg-green 42 bg-grey 40 bg-magenta 45 bg-red 41 bg-white 47 bg-yellow 43 black 30 blink 05 blue 34 bold 01 conceal 08 cyan 36 default 39 faint 02 fg-black 30 fg-blue 34 fg-cyan 36 fg-default 39 fg-green 32 fg-grey 30 fg-magenta 35 fg-red 31 fg-white 37 fg-yellow 33 green 32 grey 30 magenta 35 no-blink 25 no-conceal 28 no-reverse 27 no-standout 23 no-underline 24 none 00 normal 22 red 31 reverse 07 standout 03 underline 04 white 37 yellow 33 )
+typeset -A colour=( 00 none 01 bold 02 faint 03 standout 04 underline 05 blink 07 reverse 08 conceal 22 normal 23 no-standout 24 no-underline 25 no-blink 27 no-reverse 28 no-conceal 30 black 31 red 32 green 33 yellow 34 blue 35 magenta 36 cyan 37 white 39 default 40 bg-black 41 bg-red 42 bg-green 43 bg-yellow 44 bg-blue 45 bg-magenta 46 bg-cyan 47 bg-white 49 bg-default bg-black 40 bg-blue 44 bg-cyan 46 bg-default 49 bg-green 42 bg-grey 40 bg-magenta 45 bg-red 41 bg-white 47 bg-yellow 43 black 30 blink 05 blue 34 bold 01 conceal 08 cyan 36 default 39 faint 02 fg-black 30 fg-blue 34 fg-cyan 36 fg-default 39 fg-green 32 fg-grey 30 fg-magenta 35 fg-red 31 fg-white 37 fg-yellow 33 green 32 grey 30 magenta 35 no-blink 25 no-conceal 28 no-reverse 27 no-standout 23 no-underline 24 none 00 normal 22 red 31 reverse 07 standout 03 underline 04 white 37 yellow 33 )
+typeset -A commands
+typeset -a comppostfuncs=(  )
+typeset -a compprefuncs=(  )
+typeset custom_config_file=/Users/jstupplebeen/.oh-my-zsh/custom/lib/theme-and-appearance.zsh
+typeset d=/usr/share/zsh/5.3/functions
+typeset -a dirstack
+typeset -A dis_aliases
+typeset -A dis_functions
+typeset -A dis_galiases
+typeset -A dis_saliases
+typeset -A fg
+typeset -A fg_bold
+typeset -A fg_no_bold
+typeset -a fignore=(  )
+typeset -a fpath=( /Users/jstupplebeen/.oh-my-zsh/custom/plugins/oh-my-matrix /Users/jstupplebeen/.oh-my-zsh/functions /Users/jstupplebeen/.oh-my-zsh/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/5.3/functions )
+typeset -A functions
+typeset -A galiases
+typeset histchars='!^#'
+typeset -A langinfo
+typeset -a mailpath=(  )
+typeset -a manpath=( '' )
+typeset -a module_path=( /usr/lib/zsh/5.3 )
+typeset -A nameddirs
+typeset -A options
+typeset -a path=( /Users/jstupplebeen/.nvm/versions/node/v11.6.0/bin /Users/jstupplebeen/.cargo/bin /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/local/MacGPG2/bin )
+typeset -a pipestatus=( 0 )
+typeset plugin=oh-my-matrix
+typeset -a plugins=( git, docker, sbt, zsh-syntax-highlighting, hacker-quotes, oh-my-matrix )
+typeset -a precmd_functions=( omz_termsupport_precmd prompt_pure_precmd _zsh_highlight_main__precmd_hook )
+typeset -a preexec_functions=( omz_termsupport_preexec prompt_pure_preexec _zsh_highlight_preexec_hook )
+typeset prompt=$'%F{blue}%~%f\n%{\C-M%}%(12V.%F{242}%12v%f .)%(?.%F{magenta}.%F{red})${prompt_pure_state[prompt]}%f '
+typeset prompt_newline=$'\n%{\C-M%}'
+typeset prompt_pure_async_init=1
+typeset prompt_pure_cmd_exec_time=''
+typeset prompt_pure_cmd_timestamp=1564599983
+typeset -a prompt_pure_debug_depth=( %e %N %x )
+typeset prompt_pure_last_prompt=$'\C-[[34m~\C-[[39m\n\C-M\C-[[35m❯\C-[[39m '
+typeset -A prompt_pure_state=( prompt ❯ username '' )
+typeset -A prompt_pure_vcs_info=( branch '' pwd /Users/jstupplebeen top '' )
+typeset -a prompt_theme=( pure )
+typeset -a prompt_themes=( pure adam1 adam2 bart bigfade clint elite2 elite fade fire off oliver pws redhat suse walters zefram )
+typeset -a psvar=( '' '' '' '' '' '' '' '' '' '' '' '' )
+typeset reset_color
+typeset -A saliases
+typeset -a signals=( EXIT HUP INT QUIT ILL TRAP ABRT EMT FPE KILL BUS SEGV SYS PIPE ALRM TERM URG STOP TSTP CONT CHLD TTIN TTOU IO XCPU XFSZ VTALRM PROF WINCH INFO USR1 USR2 ZERR DEBUG )
+typeset -a watch=(  )
+typeset -a zle_bracketed_paste=( $'\C-[[?2004h' $'\C-[[?2004l' )
+typeset zsh_highlight__pat_static_bug=true

@@ -1,0 +1,60 @@
+# Some manual setup you still need to do
+# chsh -s `which zsh`
+# Install Snazzy
+# Install DankMono font
+
+cd ~
+if [ -f ~/.zshrc ]; then
+    cp ~/.zshrc ~/.zshrc.bak
+    rm -rf ~/.zshrc
+fi
+
+# Install Prezto
+# if [ -f ~/.zprezto ]; then
+#     cd ~/.zprezto
+#     git pull
+#     git submodule update --init --recursive
+# else
+#     git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+#     setopt EXTENDED_GLOB
+#     for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md; do
+#       ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+#     done
+# fi
+
+# Install powerline fonts
+cd ~
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
+# Install oh-my-zsh
+if [ -f ~/.oh-my-zsh ]; then
+    echo 'OhMyZsh already installed'
+else
+    wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+fi
+
+# Install pure prompt
+npm install --global pure-prompt
+
+# Copy zsh template
+cp ~/dotfiles/bin/dotfiles/zshell/.zshrc ~/.zshrc
+
+# Build .zshrc
+cat ~/dotfiles/bin/dotfiles/zshell/aliases >> ~/.zshrc
+cat ~/dotfiles/bin/dotfiles/zshell/secret >> ~/.zshrc
+# cat ~/dotfiles/bin/dotfiles/zshell/declares >> ~/.zshrc
+
+# Install ZSH syntax highlighting
+cd ~
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+cd ~
+rm -rf zsh-syntax-highlighting
+
+# switch to zshell
+source ~/.zshrc
+

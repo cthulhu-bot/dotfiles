@@ -1,0 +1,10 @@
+alias l='ls -lah | more'
+alias tu='top -o cpu' # cpu
+alias tm='top -o size' # memory
+alias reload='source ~/.bashrc'
+alias ..='cd ..'
+alias ~='cd ~'
+alias gs='git status'
+alias gl='git log --oneline --graph'
+alias gc='git commit -m'
+alias push='git push origin'

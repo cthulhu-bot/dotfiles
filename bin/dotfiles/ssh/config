@@ -1,0 +1,4 @@
+Host devpsv02
+  HostName devpsv02
+  User jstupplebeen
+  Port 22

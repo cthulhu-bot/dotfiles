@@ -1,0 +1,17 @@
+if [ -d "/opt/local/psvapp" ]; then
+	export JAVA_HOME=/opt/local/psvapp/jdk1.7.0_03
+fi
+if [ -d "/opt/local/jeiapp" ]; then
+	export JAVA_HOME=/opt/local/jeiapp/jdk1.7.0_03
+fi
+if [ -d "/opt/local/ccmapp" ]; then
+	export JAVA_HOME=/opt/local/ccmapp/jdk1.7.0_45
+fi
+export PATH=$JAVA_HOME/bin:$PATH:/usr/local/bin:/usr/sbin:/usr/ucb:/usr/local/sbin:/home/jstupplebeen/bin:/opt/VRTS/bin:/usr/openwin/bin:/opt/local/psvapp/git-1.7.6
+export PROMPT_COMMAND='echo -ne "\033]0;${HOSTNAME%%.*}\007"'
+export PS1='[\[\033[36m\]\u\[\033[m\]@\[\033[31m\]\h \[\033[33m\]$PWD] \[\033[m\]\D{%F %T}\n\$ '
+export ORACLE_HOME=/opt/local/oracle/product/11.2.0/client_1
+export LD_LIBRARY_PATH=/usr/local/lib:/usr/lib:/usr/dt/lib:/usr/openwin/lib:/usr/X11/lib:/usr/local/ssl/lib:/usr/local/lib/instantclient:ORACLE_HOME/lib
+export TERM=xterm
+export CATALINA_HOME=/opt/local/psvapp/tomcat
+
