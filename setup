@@ -52,11 +52,11 @@ cat ~/dotfiles/bin/dotfiles/zshell/secret >> ~/.zshrc
 # cat ~/dotfiles/bin/dotfiles/zshell/declares >> ~/.zshrc
 
 # Install Zsh Completions
-git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh}/plugins/zsh-completions
 echo "source ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-completions/zsh-completions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
 # Install Auto Suggestions
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-autosuggestions
 echo "source ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
 # Install ZSH syntax highlighting
