@@ -1,4 +1,5 @@
 export ZSH=$HOME/.oh-my-zsh
+source $HOME/.nvm/nvm.sh
 
 autoload -U promptinit; promptinit
 prompt pure
